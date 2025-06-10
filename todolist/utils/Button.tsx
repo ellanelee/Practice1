@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react"
 import { IButtonProps } from "./type"
 
 export function Button({ onClick, children }: IButtonProps) {
@@ -25,7 +26,11 @@ export function Button({ onClick, children }: IButtonProps) {
   )
 }
 
-export function EditButton({ onClick }) {
+export function EditButton({
+  onClick,
+}: {
+  onClick: MouseEventHandler<HTMLButtonElement>
+}) {
   return (
     <>
       <button
@@ -48,7 +53,11 @@ export function EditButton({ onClick }) {
   )
 }
 
-export function DeleteButton({ onClick }) {
+export function DeleteButton({
+  onClick,
+}: {
+  onClick: MouseEventHandler<HTMLButtonElement>
+}) {
   return (
     <>
       <button

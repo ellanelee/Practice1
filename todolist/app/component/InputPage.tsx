@@ -2,7 +2,6 @@
 import { MouseEvent, useState } from "react"
 import { Button } from "../../utils/Button"
 import { useTodoStore } from "../../store/todoStore"
-import TodoList from "./TodoList"
 import TodoItem from "./TodoItem"
 
 export default function InputPage() {
